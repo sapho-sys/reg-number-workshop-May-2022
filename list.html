@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,80 @@
 			background-color: gainsboro;
 		}
 
+		ul {
+			margin: 0em;
+			padding: 0em;
+		}
+
 		li {
 			list-style: none;
 			padding: 1em;
 			background-color: lightseagreen;
 			width: 10em;
 			border-bottom: 0.1em solid;
-			margin-bottom: 0.5em;
+			margin: 0.5em;
+			float: left;
 		}
+
+		.container {
+			width: 80%;
+			margin: auto;
+		}
+
+		.textInput {
+			margin: 1em;
+			padding: 1em;
+		}
+
+		button {
+			padding: 1em;
+			margin-bottom: 1em;
+		}
+
 	</style>
 </head>
+
 <body>
-	<h1>The list</h1>
-	<ul class="the_list">
-		<li>Item in the list</li>
-	</ul>
+
+	<div class="container">
+		<h1>The list</h1>
+		<button class="addItem">Add item</button>
+		<button class="clearItem">Clear items</button>
+		<input type="text" class="itemText textInput" placeholder="Enter item text" >
+		<input type="text" class="filterText textInput" placeholder="Filter text" >
+
+		<ul class="the_list">
+			<li>Item in the list</li>
+		</ul>
+	</div>
+
+
 </body>
+
+<script>
+
+	const addItem = document.querySelector(".addItem");
+	const clearItem = document.querySelector(".clearItem");
+	const theList = document.querySelector(".the_list");
+	const itemText = document.querySelector(".itemText");
+	const filterText = document.querySelector(".filterText");
+
+	clearItem.addEventListener("click", function () {
+		// clear all the list items - by setting the innerHTML of theList to a blank string.
+	});
+
+	addItem.addEventListener("click", function () {
+
+	});
+
+	filterText.addEventListener("keyup", function() {
+		
+		console.log(filterText.value);
+
+	});
+
+
+</script>
+
+
 </html>
