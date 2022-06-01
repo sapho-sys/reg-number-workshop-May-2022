@@ -7,7 +7,7 @@ What have you used the DOM for?
 
 	*  What have you done with the DOM?
 
-Create a Widget
+## Create a Widget
 
 Create a Widget that allows a user to enter a registration number 
 for Bellville, Paarl & Cape Town and that then displays them on 
