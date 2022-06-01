@@ -43,7 +43,8 @@ Ensure a registration number can only be added to the screen once. And also allo
 	* check if the current reg number is in the list using `includes`
 	* only add it if it's not already in the list
 
-*  To filter
+* To filter data
+* 
 	* to filter - loop over the list and find all the ones matching
 	* display only the ones matching the criteria
 	* decouple display from the data.
@@ -51,10 +52,15 @@ Ensure a registration number can only be added to the screen once. And also allo
 *  Create some functions to put the data on the screen.
 
 
-So to add elements to the screen dynamically you can use `document.createElement` & `document.appendChild`
+So to add elements to the screen dynamicallyuse:
 
+* `document.createElement`
+* `document.appendChild`
+
+## Using templates
 
 But what if there was a better way to merge HTML & data.
+
 An easier way to combine data & HTML...
 
 Data + HTML = Data and HTML combined.
@@ -67,20 +73,25 @@ What is a template?
 What is a CV template?
 How do one use it?
 
+## Handlebars
+
 We will look into HandlebarsJS
 
 Lets' look at a simple template.
 
+```
 Dear {firstName},
 
 The {{bookCount}} books you took out at the library is due in {{dayCount}} days.
 
 Please return these books to us in the next {{dayCount}} days.
+```
 
 * What is this template all about?
 * What data does this template need?
 
 We will look into:
+
 * how to setup a template
 * and how to use it
 
@@ -94,7 +105,6 @@ The steps:
 * Use the compiled template instance - send data into it.
 * Get a result back
 * Append the results to the DOM
-
 
 Change your registration numbers exercise to use Handlebars instead of `createElement`.
 
