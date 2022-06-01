@@ -58,6 +58,15 @@ body {
 
 }
 
+.gp {
+	border: 2px solid lightskyblue;
+}
+
+.fs {
+	/* background-color: ; */
+	border: 2px solid orange;
+}
+
 input[type='radio'] {
 	margin: 1em;
 }
