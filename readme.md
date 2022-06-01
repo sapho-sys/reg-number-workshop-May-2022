@@ -1,5 +1,5 @@
 
-#What is the DOM
+# What is the DOM
 
 * Describe the DOM in three words.
 
@@ -99,37 +99,3 @@ The steps:
 Change your registration numbers exercise to use Handlebars instead of `createElement`.
 
 How would you approach that?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
