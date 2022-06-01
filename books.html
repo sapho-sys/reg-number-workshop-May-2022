@@ -11,7 +11,25 @@
 		}
 	</style>
 	
-	<script src="language/template-x" class="bookTemplate" >
+	<script type="text/template-x" class="bookTemplate" >
+
+Dear {{firstName}},
+
+The {{bookCount}} books you took out at the library is due in {{dayCount}} days.
+
+Please return these books to us in the next {{dayCount}} days.
+<hr>
+{{#if books}}
+The books you need to return are:
+<ul>
+	{{#each books}}
+	<li>{{title}} written by {{author}}</li>
+	{{/each}}
+</ul>
+{{else}}
+Books names unknown
+{{/if}}
+
 
 	</script>
 
@@ -24,7 +42,7 @@
 	</div>
 
 	<div>
-		Usinh handlebars
+		<h2>Using handlebars</h2>
 		<div class="messageHBS" ></div>
 	</div>
 	
